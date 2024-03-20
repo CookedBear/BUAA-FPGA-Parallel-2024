@@ -1,0 +1,1032 @@
+
+*** Running vivado
+    with args -log procsys_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source procsys_wrapper.tcl -notrace
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source procsys_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/hls-syn/cnvW2A2-pynqZ1-Z2/sol1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+Command: link_design -top procsys_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/vivado/cnvW2A2-pynqZ1-Z2/cnvW2A2-pynqZ1-Z2.srcs/sources_1/bd/procsys/ip/procsys_BlackBoxJam_0_0/procsys_BlackBoxJam_0_0.dcp' for cell 'procsys_i/BlackBoxJam_0'
+INFO: [Project 1-454] Reading design checkpoint '/headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/vivado/cnvW2A2-pynqZ1-Z2/cnvW2A2-pynqZ1-Z2.srcs/sources_1/bd/procsys/ip/procsys_ps7_0/procsys_ps7_0.dcp' for cell 'procsys_i/ps7'
+INFO: [Project 1-454] Reading design checkpoint '/headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/vivado/cnvW2A2-pynqZ1-Z2/cnvW2A2-pynqZ1-Z2.srcs/sources_1/bd/procsys/ip/procsys_rst_ps7_100M_0/procsys_rst_ps7_100M_0.dcp' for cell 'procsys_i/rst_ps7_100M'
+INFO: [Project 1-454] Reading design checkpoint '/headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/vivado/cnvW2A2-pynqZ1-Z2/cnvW2A2-pynqZ1-Z2.srcs/sources_1/bd/procsys/ip/procsys_auto_pc_0/procsys_auto_pc_0.dcp' for cell 'procsys_i/axi_mem_intercon/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/vivado/cnvW2A2-pynqZ1-Z2/cnvW2A2-pynqZ1-Z2.srcs/sources_1/bd/procsys/ip/procsys_auto_pc_1/procsys_auto_pc_1.dcp' for cell 'procsys_i/ps7_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 10002 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/vivado/cnvW2A2-pynqZ1-Z2/cnvW2A2-pynqZ1-Z2.srcs/sources_1/bd/procsys/ip/procsys_ps7_0/procsys_ps7_0.xdc] for cell 'procsys_i/ps7/inst'
+Finished Parsing XDC File [/headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/vivado/cnvW2A2-pynqZ1-Z2/cnvW2A2-pynqZ1-Z2.srcs/sources_1/bd/procsys/ip/procsys_ps7_0/procsys_ps7_0.xdc] for cell 'procsys_i/ps7/inst'
+Parsing XDC File [/headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/vivado/cnvW2A2-pynqZ1-Z2/cnvW2A2-pynqZ1-Z2.srcs/sources_1/bd/procsys/ip/procsys_rst_ps7_100M_0/procsys_rst_ps7_100M_0_board.xdc] for cell 'procsys_i/rst_ps7_100M/U0'
+Finished Parsing XDC File [/headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/vivado/cnvW2A2-pynqZ1-Z2/cnvW2A2-pynqZ1-Z2.srcs/sources_1/bd/procsys/ip/procsys_rst_ps7_100M_0/procsys_rst_ps7_100M_0_board.xdc] for cell 'procsys_i/rst_ps7_100M/U0'
+Parsing XDC File [/headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/vivado/cnvW2A2-pynqZ1-Z2/cnvW2A2-pynqZ1-Z2.srcs/sources_1/bd/procsys/ip/procsys_rst_ps7_100M_0/procsys_rst_ps7_100M_0.xdc] for cell 'procsys_i/rst_ps7_100M/U0'
+Finished Parsing XDC File [/headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/vivado/cnvW2A2-pynqZ1-Z2/cnvW2A2-pynqZ1-Z2.srcs/sources_1/bd/procsys/ip/procsys_rst_ps7_100M_0/procsys_rst_ps7_100M_0.xdc] for cell 'procsys_i/rst_ps7_100M/U0'
+Parsing XDC File [/headless/Desktop/BNN-PYNQ-master/bnn/src/library/script/pynqZ1-Z2/pynqZ1-Z2.xdc]
+Finished Parsing XDC File [/headless/Desktop/BNN-PYNQ-master/bnn/src/library/script/pynqZ1-Z2/pynqZ1-Z2.xdc]
+Sourcing Tcl File [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl:2]
+all_registers: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 2479.570 ; gain = 624.594 ; free physical = 52259 ; free virtual = 458119
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2599.629 ; gain = 0.000 ; free physical = 52366 ; free virtual = 458226
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3231 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 1840 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 352 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 18 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 828 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 144 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 48 instances
+
+16 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:33 . Memory (MB): peak = 2599.629 ; gain = 1242.992 ; free physical = 52366 ; free virtual = 458226
+Command: opt_design -directive Explore
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2599.629 ; gain = 0.000 ; free physical = 52360 ; free virtual = 458221
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 17b9a2b3d
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 2599.629 ; gain = 0.000 ; free physical = 52236 ; free virtual = 458098
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 130366cf6
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2599.629 ; gain = 0.000 ; free physical = 52276 ; free virtual = 458138
+INFO: [Opt 31-389] Phase Retarget created 14 cells and removed 81 cells
+INFO: [Opt 31-1021] In phase Retarget, 16 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Phase 2 Constant propagation | Checksum: 1adae80a8
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2599.629 ; gain = 0.000 ; free physical = 52275 ; free virtual = 458135
+INFO: [Opt 31-389] Phase Constant propagation created 28 cells and removed 617 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 15 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 15507e260
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 2599.629 ; gain = 0.000 ; free physical = 52262 ; free virtual = 458123
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 859 cells
+INFO: [Opt 31-1021] In phase Sweep, 78 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 15507e260
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2599.629 ; gain = 0.000 ; free physical = 52276 ; free virtual = 458137
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 28efe259e
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 2599.629 ; gain = 0.000 ; free physical = 52267 ; free virtual = 458128
+INFO: [Opt 31-389] Phase Shift Register Optimization created 1 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 28efe259e
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 2599.629 ; gain = 0.000 ; free physical = 52262 ; free virtual = 458124
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 16 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              14  |              81  |                                             16  |
+|  Constant propagation         |              28  |             617  |                                             15  |
+|  Sweep                        |               0  |             859  |                                             78  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               1  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             16  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2599.629 ; gain = 0.000 ; free physical = 52265 ; free virtual = 458126
+Ending Logic Optimization Task | Checksum: e0fd2ec0
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2599.629 ; gain = 0.000 ; free physical = 52261 ; free virtual = 458123
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.796 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 142 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 28 newly gated: 2 Total Ports: 284
+Number of Flops added for Enable Generation: 4
+
+Ending PowerOpt Patch Enables Task | Checksum: 1cce7e85f
+
+Time (s): cpu = 00:00:00.98 ; elapsed = 00:00:00.94 . Memory (MB): peak = 3587.035 ; gain = 0.000 ; free physical = 52101 ; free virtual = 457962
+Ending Power Optimization Task | Checksum: 1cce7e85f
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:24 . Memory (MB): peak = 3587.035 ; gain = 987.406 ; free physical = 52182 ; free virtual = 458043
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 1ef46279f
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 3587.035 ; gain = 0.000 ; free physical = 52203 ; free virtual = 458067
+Ending Final Cleanup Task | Checksum: 1ef46279f
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 3587.035 ; gain = 0.000 ; free physical = 52196 ; free virtual = 458059
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3587.035 ; gain = 0.000 ; free physical = 52196 ; free virtual = 458059
+Ending Netlist Obfuscation Task | Checksum: 1ef46279f
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3587.035 ; gain = 0.000 ; free physical = 52199 ; free virtual = 458063
+INFO: [Common 17-83] Releasing license: Implementation
+44 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:02:14 ; elapsed = 00:00:58 . Memory (MB): peak = 3587.035 ; gain = 987.406 ; free physical = 52194 ; free virtual = 458057
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3587.035 ; gain = 0.000 ; free physical = 52196 ; free virtual = 458059
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3587.035 ; gain = 0.000 ; free physical = 52189 ; free virtual = 458055
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3587.035 ; gain = 0.000 ; free physical = 52173 ; free virtual = 458048
+INFO: [Common 17-1381] The checkpoint '/headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/vivado/cnvW2A2-pynqZ1-Z2/cnvW2A2-pynqZ1-Z2.runs/impl_1/procsys_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 3587.035 ; gain = 0.000 ; free physical = 52137 ; free virtual = 458011
+INFO: [runtcl-4] Executing : report_drc -file procsys_wrapper_drc_opted.rpt -pb procsys_wrapper_drc_opted.pb -rpx procsys_wrapper_drc_opted.rpx
+Command: report_drc -file procsys_wrapper_drc_opted.rpt -pb procsys_wrapper_drc_opted.pb -rpx procsys_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Coretcl 2-168] The results of DRC are in file /headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/vivado/cnvW2A2-pynqZ1-Z2/cnvW2A2-pynqZ1-Z2.runs/impl_1/procsys_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design -directive ExtraTimingOpt
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[4] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[4] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[4] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[4] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[4] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[5] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[5] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[5] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[5] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[5] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[6] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[6] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[6] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[6] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[6] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[7] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[7] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[7] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[7] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[7] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'ExtraTimingOpt' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 52089 ; free virtual = 457963
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1225f76bd
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 52094 ; free virtual = 457968
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 52089 ; free virtual = 457963
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 10fa3c750
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51993 ; free virtual = 457867
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: dee83745
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:29 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51839 ; free virtual = 457713
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: dee83745
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:29 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51832 ; free virtual = 457705
+Phase 1 Placer Initialization | Checksum: dee83745
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:29 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51834 ; free virtual = 457707
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1c771b025
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:33 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51784 ; free virtual = 457658
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51777 ; free virtual = 457653
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |            0  |              0  |                     0  |           0  |           5  |  00:00:01  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: 2788c0c6c
+
+Time (s): cpu = 00:03:16 ; elapsed = 00:01:40 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51764 ; free virtual = 457640
+Phase 2 Global Placement | Checksum: 28cda0d23
+
+Time (s): cpu = 00:03:25 ; elapsed = 00:01:43 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51792 ; free virtual = 457668
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 28cda0d23
+
+Time (s): cpu = 00:03:26 ; elapsed = 00:01:43 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51793 ; free virtual = 457669
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 19fc46f46
+
+Time (s): cpu = 00:03:57 ; elapsed = 00:01:57 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51749 ; free virtual = 457623
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 2505c3c89
+
+Time (s): cpu = 00:03:59 ; elapsed = 00:01:58 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51746 ; free virtual = 457620
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 260f2f5cd
+
+Time (s): cpu = 00:03:59 ; elapsed = 00:01:58 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51746 ; free virtual = 457620
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 2abb185f3
+
+Time (s): cpu = 00:04:40 ; elapsed = 00:02:35 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51708 ; free virtual = 457582
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1c7e2efc2
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:02:37 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51715 ; free virtual = 457589
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 16d9b2463
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:02:38 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51715 ; free virtual = 457589
+Phase 3 Detail Placement | Checksum: 16d9b2463
+
+Time (s): cpu = 00:04:44 ; elapsed = 00:02:39 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51715 ; free virtual = 457589
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: f83f18b2
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net procsys_i/BlackBoxJam_0/inst/grp_DoCompute_fu_418/inter6_V_V_U/ap_rst, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net procsys_i/BlackBoxJam_0/inst/grp_DoCompute_fu_418/Matrix_Vector_Activa_U0/ap_block_pp0_stage0_subdone4_in, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-46] BUFG insertion identified 2 candidate nets, 0 success, 0 bufg driver replicated, 2 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason
+Phase 4.1.1.1 BUFG Insertion | Checksum: f83f18b2
+
+Time (s): cpu = 00:05:20 ; elapsed = 00:02:51 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51760 ; free virtual = 457637
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.550. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: b9703009
+
+Time (s): cpu = 00:05:24 ; elapsed = 00:02:55 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51763 ; free virtual = 457637
+Phase 4.1 Post Commit Optimization | Checksum: b9703009
+
+Time (s): cpu = 00:05:25 ; elapsed = 00:02:55 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51762 ; free virtual = 457636
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: b9703009
+
+Time (s): cpu = 00:05:26 ; elapsed = 00:02:56 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51762 ; free virtual = 457636
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: b9703009
+
+Time (s): cpu = 00:05:27 ; elapsed = 00:02:57 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51760 ; free virtual = 457635
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51760 ; free virtual = 457635
+Phase 4.4 Final Placement Cleanup | Checksum: fbca56e7
+
+Time (s): cpu = 00:05:27 ; elapsed = 00:02:57 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51760 ; free virtual = 457634
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: fbca56e7
+
+Time (s): cpu = 00:05:28 ; elapsed = 00:02:58 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51762 ; free virtual = 457636
+Ending Placer Task | Checksum: 780376cc
+
+Time (s): cpu = 00:05:28 ; elapsed = 00:02:58 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51867 ; free virtual = 457741
+INFO: [Common 17-83] Releasing license: Implementation
+78 Infos, 121 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:05:36 ; elapsed = 00:03:03 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51867 ; free virtual = 457741
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51867 ; free virtual = 457741
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51808 ; free virtual = 457714
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:13 ; elapsed = 00:00:04 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51730 ; free virtual = 457715
+INFO: [Common 17-1381] The checkpoint '/headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/vivado/cnvW2A2-pynqZ1-Z2/cnvW2A2-pynqZ1-Z2.runs/impl_1/procsys_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51879 ; free virtual = 457779
+INFO: [runtcl-4] Executing : report_io -file procsys_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.25 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51869 ; free virtual = 457768
+INFO: [runtcl-4] Executing : report_utilization -file procsys_wrapper_utilization_placed.rpt -pb procsys_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file procsys_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.49 ; elapsed = 00:00:00.62 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51879 ; free virtual = 457779
+Command: phys_opt_design -directive AggressiveExplore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: AggressiveExplore
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.500 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+88 Infos, 121 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:07 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51839 ; free virtual = 457740
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51840 ; free virtual = 457740
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51779 ; free virtual = 457713
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51698 ; free virtual = 457709
+INFO: [Common 17-1381] The checkpoint '/headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/vivado/cnvW2A2-pynqZ1-Z2/cnvW2A2-pynqZ1-Z2.runs/impl_1/procsys_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51961 ; free virtual = 457885
+Command: route_design -directive NoTimingRelaxation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'NoTimingRelaxation'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 10e8ee1f ConstDB: 0 ShapeSum: 671a88ad RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 11ac8f9da
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51789 ; free virtual = 457713
+Post Restoration Checksum: NetGraph: cfe7e954 NumContArr: 4ae11086 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 11ac8f9da
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51799 ; free virtual = 457723
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 11ac8f9da
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:21 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51768 ; free virtual = 457693
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 11ac8f9da
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51765 ; free virtual = 457689
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1dacc8f01
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:38 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51719 ; free virtual = 457643
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.597  | TNS=0.000  | WHS=-0.243 | THS=-608.047|
+
+Phase 2 Router Initialization | Checksum: 2064cb391
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:00:47 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51711 ; free virtual = 457635
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: e7375e77
+
+Time (s): cpu = 00:02:46 ; elapsed = 00:01:04 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51688 ; free virtual = 457617
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 11200
+ Number of Nodes with overlaps = 2024
+ Number of Nodes with overlaps = 811
+ Number of Nodes with overlaps = 394
+ Number of Nodes with overlaps = 172
+ Number of Nodes with overlaps = 90
+ Number of Nodes with overlaps = 50
+ Number of Nodes with overlaps = 20
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.087  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 5f4fd8a7
+
+Time (s): cpu = 00:06:27 ; elapsed = 00:02:36 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51634 ; free virtual = 457560
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 28
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.087  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: b28b7a14
+
+Time (s): cpu = 00:06:39 ; elapsed = 00:02:48 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51633 ; free virtual = 457559
+Phase 4 Rip-up And Reroute | Checksum: b28b7a14
+
+Time (s): cpu = 00:06:40 ; elapsed = 00:02:49 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51637 ; free virtual = 457564
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: db611f34
+
+Time (s): cpu = 00:06:48 ; elapsed = 00:02:51 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51637 ; free virtual = 457564
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.087  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: db611f34
+
+Time (s): cpu = 00:06:48 ; elapsed = 00:02:51 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51634 ; free virtual = 457562
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: db611f34
+
+Time (s): cpu = 00:06:48 ; elapsed = 00:02:51 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51640 ; free virtual = 457568
+Phase 5 Delay and Skew Optimization | Checksum: db611f34
+
+Time (s): cpu = 00:06:48 ; elapsed = 00:02:52 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51634 ; free virtual = 457562
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: ea501cb2
+
+Time (s): cpu = 00:06:57 ; elapsed = 00:02:55 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51643 ; free virtual = 457573
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.087  | TNS=0.000  | WHS=0.022  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1090a03a6
+
+Time (s): cpu = 00:06:57 ; elapsed = 00:02:55 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51625 ; free virtual = 457559
+Phase 6 Post Hold Fix | Checksum: 1090a03a6
+
+Time (s): cpu = 00:06:57 ; elapsed = 00:02:55 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51627 ; free virtual = 457561
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 25.6184 %
+  Global Horizontal Routing Utilization  = 32.7912 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 111bb7734
+
+Time (s): cpu = 00:06:58 ; elapsed = 00:02:56 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51632 ; free virtual = 457566
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 111bb7734
+
+Time (s): cpu = 00:06:58 ; elapsed = 00:02:56 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51616 ; free virtual = 457550
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1f4770693
+
+Time (s): cpu = 00:07:04 ; elapsed = 00:03:02 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51628 ; free virtual = 457559
+
+Phase 10 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.089  | TNS=0.000  | WHS=0.024  | THS=0.000  |
+
+INFO: [Route 35-61] The design met the timing requirement.
+Phase 10 Post Router Timing | Checksum: 1a921f417
+
+Time (s): cpu = 00:07:41 ; elapsed = 00:03:11 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51578 ; free virtual = 457506
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:07:42 ; elapsed = 00:03:11 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51754 ; free virtual = 457682
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+106 Infos, 221 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:07:52 ; elapsed = 00:03:17 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51745 ; free virtual = 457673
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51753 ; free virtual = 457681
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51698 ; free virtual = 457660
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51596 ; free virtual = 457665
+INFO: [Common 17-1381] The checkpoint '/headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/vivado/cnvW2A2-pynqZ1-Z2/cnvW2A2-pynqZ1-Z2.runs/impl_1/procsys_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:28 ; elapsed = 00:00:22 . Memory (MB): peak = 3595.148 ; gain = 0.000 ; free physical = 51726 ; free virtual = 457687
+INFO: [runtcl-4] Executing : report_drc -file procsys_wrapper_drc_routed.rpt -pb procsys_wrapper_drc_routed.pb -rpx procsys_wrapper_drc_routed.rpx
+Command: report_drc -file procsys_wrapper_drc_routed.rpt -pb procsys_wrapper_drc_routed.pb -rpx procsys_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/vivado/cnvW2A2-pynqZ1-Z2/cnvW2A2-pynqZ1-Z2.runs/impl_1/procsys_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:24 ; elapsed = 00:00:07 . Memory (MB): peak = 3629.078 ; gain = 33.930 ; free physical = 51695 ; free virtual = 457655
+INFO: [runtcl-4] Executing : report_methodology -file procsys_wrapper_methodology_drc_routed.rpt -pb procsys_wrapper_methodology_drc_routed.pb -rpx procsys_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file procsys_wrapper_methodology_drc_routed.rpt -pb procsys_wrapper_methodology_drc_routed.pb -rpx procsys_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/vivado/cnvW2A2-pynqZ1-Z2/cnvW2A2-pynqZ1-Z2.runs/impl_1/procsys_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:01:07 ; elapsed = 00:00:19 . Memory (MB): peak = 3629.078 ; gain = 0.000 ; free physical = 51241 ; free virtual = 457201
+INFO: [runtcl-4] Executing : report_power -file procsys_wrapper_power_routed.rpt -pb procsys_wrapper_power_summary_routed.pb -rpx procsys_wrapper_power_routed.rpx
+Command: report_power -file procsys_wrapper_power_routed.rpt -pb procsys_wrapper_power_summary_routed.pb -rpx procsys_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+118 Infos, 222 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:45 ; elapsed = 00:00:14 . Memory (MB): peak = 3732.141 ; gain = 103.062 ; free physical = 51087 ; free virtual = 457060
+INFO: [runtcl-4] Executing : report_route_status -file procsys_wrapper_route_status.rpt -pb procsys_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file procsys_wrapper_timing_summary_routed.rpt -pb procsys_wrapper_timing_summary_routed.pb -rpx procsys_wrapper_timing_summary_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file procsys_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file procsys_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file procsys_wrapper_bus_skew_routed.rpt -pb procsys_wrapper_bus_skew_routed.pb -rpx procsys_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: phys_opt_design -directive AggressiveExplore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 100.0% nets are fully routed)
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: AggressiveExplore
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+134 Infos, 222 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3732.141 ; gain = 0.000 ; free physical = 51045 ; free virtual = 457020
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3732.141 ; gain = 0.000 ; free physical = 50975 ; free virtual = 456985
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 3732.141 ; gain = 0.000 ; free physical = 50852 ; free virtual = 456968
+INFO: [Common 17-1381] The checkpoint '/headless/Desktop/BNN-PYNQ-master/bnn/src/network/output/vivado/cnvW2A2-pynqZ1-Z2/cnvW2A2-pynqZ1-Z2.runs/impl_1/procsys_wrapper_postroute_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 3732.141 ; gain = 0.000 ; free physical = 50996 ; free virtual = 457002
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -warn_on_violation -file procsys_wrapper_timing_summary_postroute_physopted.rpt -pb procsys_wrapper_timing_summary_postroute_physopted.pb -rpx procsys_wrapper_timing_summary_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file procsys_wrapper_bus_skew_postroute_physopted.rpt -pb procsys_wrapper_bus_skew_postroute_physopted.pb -rpx procsys_wrapper_bus_skew_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: write_bitstream -force procsys_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[4] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[4] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[4] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[4] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[4] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[5] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[5] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[5] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[5] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[5] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[6] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[6] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[6] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[6] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[6] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[7] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[7] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[7] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[7] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[7] (net: procsys_i/BlackBoxJam_0/inst/BlackBoxJam_hostmem_m_axi_U/bus_read/buff_rdata/m_axi_hostmem_RVALID) which is driven by a register (procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RTSTAT-10] No routable loads: 15 net(s) have no routable loads. The problem bus(es) and/or net(s) are procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid, procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid, and procsys_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 22 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./procsys_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+152 Infos, 344 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:01:04 ; elapsed = 00:02:35 . Memory (MB): peak = 4089.207 ; gain = 357.066 ; free physical = 50872 ; free virtual = 456884
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 20 13:46:54 2024...
