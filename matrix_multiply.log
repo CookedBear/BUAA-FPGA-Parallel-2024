@@ -1,0 +1,123 @@
+// attr [A_buf] storage_scope = "global"
+allocate A_buf[int8 * 256]
+// attr [B_buf] storage_scope = "global"
+allocate B_buf[int8 * 65536]
+// attr [C_buf] storage_scope = "global"
+allocate C_buf[int32 * 256]
+produce A_buf {
+  for (i1, 0, 16) {
+    for (i3, 0, 16) {
+      A_buf[((i1*16) + i3)] = A[((i1*16) + i3)]
+    }
+  }
+}
+produce B_buf {
+  for (i0, 0, 16) {
+    for (i1, 0, 16) {
+      for (i2, 0, 16) {
+        for (i3, 0, 16) {
+          B_buf[((((i0*4096) + (i1*256)) + (i2*16)) + i3)] = B[((((i0*4096) + (i1*256)) + (i2*16)) + i3)]
+        }
+      }
+    }
+  }
+}
+produce C_buf {
+  for (co, 0, 16) {
+    for (ci, 0, 16) {
+      C_buf[((co*16) + ci)] = 0
+      for (ko, 0, 16) {
+        for (ki, 0, 16) {
+          C_buf[((co*16) + ci)] = (C_buf[((co*16) + ci)] + (int32(A_buf[((ko*16) + ki)])*int32(B_buf[((((co*4096) + (ko*256)) + (ci*16)) + ki)])))
+        }
+      }
+    }
+  }
+}
+produce C {
+  for (i1, 0, 16) {
+    for (i3, 0, 16) {
+      C[((i1*16) + i3)] = int8(C_buf[((i1*16) + i3)])
+    }
+  }
+}
+
+// attr [C_buf] storage_scope = "local.acc_buffer"
+allocate C_buf[int32 * 256]
+// attr [A_buf] storage_scope = "local.inp_buffer"
+allocate A_buf[int8 * 16]
+// attr [B_buf] storage_scope = "local.wgt_buffer"
+allocate B_buf[int8 * 16]
+produce C_buf {
+  for (co, 0, 16) {
+    for (ci, 0, 16) {
+      C_buf[((co*16) + ci)] = 0
+      for (ko, 0, 16) {
+        produce A_buf {
+          // attr [iter_var(i0, )] pragma_dma_copy = 1
+          for (i3, 0, 16) {
+            A_buf[i3] = A[((ko*16) + i3)]
+          }
+        }
+        produce B_buf {
+          // attr [iter_var(i0, )] pragma_dma_copy = 1
+          for (i3, 0, 16) {
+            B_buf[i3] = B[((((co*4096) + (ko*256)) + (ci*16)) + i3)]
+          }
+        }
+        for (ki, 0, 16) {
+          C_buf[((co*16) + ci)] = (C_buf[((co*16) + ci)] + (int32(A_buf[ki])*int32(B_buf[ki])))
+        }
+      }
+    }
+  }
+}
+produce C {
+  // attr [iter_var(i0, )] pragma_dma_copy = 1
+  for (i1, 0, 16) {
+    for (i3, 0, 16) {
+      C[((i1*16) + i3)] = int8(C_buf[((i1*16) + i3)])
+    }
+  }
+}
+
+// attr [C_buf] storage_scope = "local.acc_buffer"
+// attr [A_buf] storage_scope = "local.inp_buffer"
+// attr [B_buf] storage_scope = "local.wgt_buffer"
+produce C_buf {
+  // attr [iter_var(vta, , vta)] coproc_scope = 2
+  // attr [iter_var(vta, , vta)] coproc_uop_scope = "VTAPushGEMMOp"
+  VTAUopLoopBegin(16, 1, 0, 0)
+  VTAUopPush(0, 1, 0, 0, 0, 0, 0, 0)
+  VTAUopLoopEnd()
+  vta.coproc_dep_push(2, 1)
+  for (ko, 0, 16) {
+    // attr [iter_var(vta, , vta)] coproc_scope = 1
+    vta.coproc_dep_pop(2, 1)
+    produce A_buf {
+      VTALoadBuffer2D(tvm_thread_context(VTATLSCommandHandle()), A, ko, 1, 1, 1, 0, 0, 0, 0, 0, 2)
+    }
+    // attr [iter_var(vta, , vta)] coproc_scope = 1
+    produce B_buf {
+      VTALoadBuffer2D(tvm_thread_context(VTATLSCommandHandle()), B, ko, 1, 16, 16, 0, 0, 0, 0, 0, 1)
+    }
+    vta.coproc_dep_push(1, 2)
+    // attr [iter_var(vta, , vta)] coproc_scope = 2
+    vta.coproc_dep_pop(1, 2)
+    // attr [iter_var(vta, , vta)] coproc_uop_scope = "VTAPushGEMMOp"
+    VTAUopLoopBegin(16, 1, 0, 1)
+    VTAUopPush(0, 0, 0, 0, 0, 0, 0, 0)
+    VTAUopLoopEnd()
+    vta.coproc_dep_push(2, 1)
+  }
+  vta.coproc_dep_push(2, 3)
+  vta.coproc_dep_pop(2, 1)
+}
+// attr [iter_var(vta, , vta)] coproc_scope = 3
+vta.coproc_dep_pop(2, 3)
+produce C {
+  VTAStoreBuffer2D(tvm_thread_context(VTATLSCommandHandle()), 0, 4, C, 0, 16, 1, 16)
+}
+vta.coproc_sync()
+
+Successful matrix multiply test!
